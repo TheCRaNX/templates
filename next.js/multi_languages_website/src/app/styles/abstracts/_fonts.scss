@@ -1,0 +1,198 @@
+// ============================================================================= //
+// SRC/APP/STYLES/ABSTRACTS/_FONTS.SCSS
+// ============================================================================= //
+
+
+
+
+body {
+    color: var(--eb-primary-font-color);
+    font-size: var(--eb-default-font-size);
+}
+
+a {
+    color: var(--eb-link-color);
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+
+/* TABLET */
+@media (min-width: 768px) {
+    body {
+        font-size: var(--eb-default-font-size);
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+    
+    h2 {
+        font-size: 30px;
+    }
+    
+    h3 {
+        font-size: 26px;
+    }
+    
+    h4 {
+        font-size: 22px;
+    }
+    
+    h5 {
+        font-size: 20px;
+    }
+    
+    h6 {
+        font-size: 18px;
+    }
+}
+
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+    body {
+        font-size: var(--eb-default-font-size);
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+    
+    h2 {
+        font-size: 34px;
+    }
+    
+    h3 {
+        font-size: 30px;
+    }
+    
+    h4 {
+        font-size: 26px;
+    }
+    
+    h5 {
+        font-size: 22px;
+    }
+    
+    h6 {
+        font-size: 20px;
+    }
+}
+
+
+/* LARGE SCREENS */
+@media (min-width: 2560px) {
+    body {
+        font-size: var(--eb-default-font-size);
+    }
+
+    h1 {
+        font-size: 68px;
+    }
+    
+    h2 {
+        font-size: 60px;
+    }
+    
+    h3 {
+        font-size: 52px;
+    }
+    
+    h4 {
+        font-size: 44px;
+    }
+    
+    h5 {
+        font-size: 36px;
+    }
+    
+    h6 {
+        font-size: 28px;
+    }
+}
+
+
+@media (min-width: 3840px) {
+    body {
+        font-size: var(--eb-default-font-size);
+    }
+
+    h1 {
+        font-size: 76px;
+    }
+    
+    h2 {
+        font-size: 68px;
+    }
+    
+    h3 {
+        font-size: 60px;
+    }
+    
+    h4 {
+        font-size: 52px;
+    }
+    
+    h5 {
+        font-size: 44px;
+    }
+    
+    h6 {
+        font-size: 36px;
+    }
+}
+
+
+@media (min-width: 5120px) {
+    body {
+        font-size: var(--eb-default-font-size);
+    }
+
+    h1 {
+        font-size: 92px;
+    }
+    
+    h2 {
+        font-size: 84px;
+    }
+    
+    h3 {
+        font-size: 76px;
+    }
+    
+    h4 {
+        font-size: 68px;
+    }
+    
+    h5 {
+        font-size: 60px;
+    }
+    
+    h6 {
+        font-size: 52px;
+    }
+}

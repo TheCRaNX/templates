@@ -1,0 +1,50 @@
+// =================================================== //
+// SRC/APP/COMPONENTS/HEADER/HEADER.MODULE.SCSS
+// =================================================== //
+
+
+
+
+.ebHeader {
+    height: 75px;
+    padding: var(--eb-default-outer-space);
+    position: absolute;
+    width: 100vw;
+    z-index: 1000;
+}
+
+.ebButtonWrapper{
+    border: 2px solid var(--eb-primary-font-color);
+    background-color: var(--eb-primary-color);
+    height: 45px;
+    top: var(--eb-default-outer-space);
+    left: var(--eb-default-outer-space);
+
+    width: 45px;
+    z-index: 1000;
+}
+
+
+/* LARGE SCREENS */
+@media (min-width: 2560px) {
+    .ebButtonWrapper{
+        height: 80px;
+        width: 80px;
+    }
+}
+
+
+@media (min-width: 3840px) {
+    .ebButtonWrapper{
+        height: 100px;
+        width: 100px;
+    }
+}
+
+
+@media (min-width: 5120px) {
+    .ebButtonWrapper{
+        height: 120px;
+        width: 120px;
+    }
+}

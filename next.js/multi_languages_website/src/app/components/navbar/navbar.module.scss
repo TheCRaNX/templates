@@ -1,0 +1,108 @@
+// =================================================== //
+// SRC/APP/COMPONENTS/NAVBAR/NAVBAR.MODULE.SCSS
+// =================================================== //
+
+
+
+
+.ebNavbar {
+    background-color: var(--eb-secondary-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 82vw;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s var(--eb-navbar-animation-time), opacity var(--eb-navbar-animation-time) ease;
+
+    .ebLogo {
+        height: 150px;
+        margin-top: 75px;
+        width: auto;
+    }
+
+    a {
+        text-transform: uppercase;
+        font-size: 24px;
+    }
+}
+
+.ebNavbarWrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: var(--eb-default-outer-space);
+    justify-content: flex-start;
+
+    height: 100%;
+    width: 100%;
+
+    .ebList {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            text-align: center;
+        }
+    }
+}
+
+.ebNavbarActive {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 3s ease;
+}
+
+
+.ebNavbarElement {
+    height: fit-content;
+    width: fit-content;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--eb-navbar-animation-time) ease, visibility 0s var(--eb-navbar-animation-time);
+}
+
+
+.ebNavbarElementActive {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 3s ease, visibility 0s;
+}
+
+
+.ebNavbarElementInActive {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--eb-navbar-animation-time) ease, visibility 0s var(--eb-navbar-animation-time);
+}
+
+
+/* LARGE SCREENS */
+@media (min-width: 2560px) {
+    .ebNavbar {    
+        a {
+            font-size: 48px;
+        }
+    }
+}
+
+
+@media (min-width: 3840px) {
+    .ebNavbar {    
+        a {
+            font-size: 72px;
+        }
+    }
+}
+
+
+@media (min-width: 5120px) {
+    .ebNavbar {    
+        a {
+            font-size: 96px;
+        }
+    }
+}

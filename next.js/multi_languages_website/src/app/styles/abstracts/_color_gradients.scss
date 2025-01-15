@@ -1,0 +1,9 @@
+// ============================================================================= //
+// SRC/APP/STYLES/ABSTRACTS/_COLOR_GRADIENTS.SCSS
+// ============================================================================= //
+
+
+
+:root {
+    --primary-color-gradient: linear-gradient(to right, var(--eb-primary-color), var(--eb-secondary-color));
+}

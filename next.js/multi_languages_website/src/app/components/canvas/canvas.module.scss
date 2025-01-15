@@ -1,0 +1,28 @@
+// ============================================================================= //
+// SRC/APP/COMPONENTS/CANVAS/CANVAS.MODULE.SCSS
+// ============================================================================= //
+
+
+
+
+.ebCanvas{
+    background-color: var(--eb-primary-color);
+
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.ebContent{
+    height: 100%;
+    position: relative;
+    width: 100%;
+    transition: transform var(--eb-navbar-animation-time) ease;
+}
+
+.ebNavbarActive{
+    transform: translateX(calc(76% + var(--eb-default-outer-space))) translateZ(0px);
+    transition: transform var(--eb-navbar-animation-time) ease;
+
+    overflow: hidden;
+}

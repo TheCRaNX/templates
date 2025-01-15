@@ -1,0 +1,69 @@
+// ============================================================================= //
+// SRC/APP/STYLES/ABSTRACTS/_VARIABLES.SCSS
+// ============================================================================= //
+
+
+
+// Default Settings //
+:root {
+    --eb-default-font-size: 16px;
+
+    --eb-default-inner-space: 16px;
+    --eb-default-outer-space: 16px;
+
+    --eb-navbar-animation-time: 0.8s;
+}
+
+
+/* TABLET */
+@media (min-width: 768px) {
+    :root {
+        --eb-default-font-size: 18px;
+
+        --eb-default-inner-space: 18px;
+        --eb-default-outer-space: 18px;
+    }
+}
+
+
+/* DESKTOP */
+@media (min-width: 1200px) {
+    :root {
+        --eb-default-font-size: 20px;
+
+        --eb-default-inner-space: 20px;
+        --eb-default-outer-space: 20px;
+    }
+}
+
+
+@media (min-width: 1440px) {
+    :root {
+        --eb-default-inner-space: 25px;
+        --eb-default-outer-space: 25px;
+        
+        --eb-navbar-animation-time: 1s;
+    }
+}
+
+
+/* LARGE SCREENS */
+@media (min-width: 2560px) {
+    :root {
+        --eb-default-font-size: 28px;
+    }
+}
+
+
+@media (min-width: 3840px) {
+    :root {
+        --eb-default-font-size: 36px;
+    }
+}
+
+
+@media (min-width: 5120px) {
+    :root {
+        --eb-default-font-size: 52px;
+    }
+}

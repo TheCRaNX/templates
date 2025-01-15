@@ -1,0 +1,30 @@
+// ============================================================================= //
+// SRC/APP/[LOCALE]/IMPRINT/PAGE.MODULE.SCSS
+// ============================================================================= //
+
+
+
+.ebImprint{
+    background-color: var(--eb-primary-color);
+    height: fit-content;
+    min-height: 50vh;
+    width: 100%;
+
+}
+
+.ebTextWrapper {
+    height: 100%;
+    width: 100%;
+
+    h4 {
+        margin: 0 0 var(--eb-default-outer-space) 0;
+    }
+
+    h6 {
+        margin: unset;
+    }
+
+    p {
+        margin: 0 0 var(--eb-default-outer-space) 0;
+    }
+}

@@ -1,0 +1,52 @@
+// ============================================================================= //
+// SRC/APP/[LOCALE]/CONTACT/PAGE.MODULE.SCSS
+// ============================================================================= //
+
+
+
+.ebContact {
+    background-color: var(--eb-primary-color);
+
+    height: fit-content;
+    min-height: 50vh;
+    width: 100%;
+}
+
+.ebContactBox {
+    display: flex;
+    justify-content: center;
+
+    height: 100%;
+    width: 100%;
+}
+
+.ebTextWrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: var(--eb-default-inner-space);
+
+    height: 100%;
+    width: 100%;
+
+    p {
+        height: fit-content;
+        text-align: left;
+        width: 40%;
+    }
+
+    .ebCompany {
+        text-transform: uppercase;
+    }
+
+    .ebMailRedirection {
+        color: var(--eb-link-color);
+        text-transform: uppercase;
+        width: 40%;
+    }
+}
+
+.ebMapWrapper {
+    height: auto;
+    width: 100%;
+}

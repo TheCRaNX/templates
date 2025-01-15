@@ -1,0 +1,32 @@
+// ============================================================================= //
+// SRC/APP/STYLES/BASE/_CLASSES.SCSS
+// ============================================================================= //
+
+
+.ebNoOverflow {
+    overflow: hidden;
+}
+
+.ebNoHorizontalOverflow {
+    overflow-x: hidden;
+}
+
+.ebBackgroundColorPrimary {
+    background-color: var(--eb-primary-color);
+}
+
+.ebBackgroundColorSecondary {
+    background-color: var(--eb-secondary-color);
+}
+
+.ebTextAlignLeft {
+    text-align: left;
+}
+
+.ebTextAlignCenter {
+    text-align: center;
+}
+
+.ebTextAlignRight {
+    text-align: right;
+}

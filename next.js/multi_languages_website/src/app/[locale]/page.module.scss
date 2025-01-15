@@ -1,0 +1,226 @@
+// ============================================================================= //
+// SRC/APP/[LOCALE]/PAGE.MODULE.SCSS
+// ============================================================================= //
+
+
+
+
+.ebMain {
+    background-color: var(--eb-primary-color);
+
+    display: flex;
+    flex-direction: column;
+
+    height: fit-content;
+    min-height: 50vh;
+    position: relative;
+    width: 100%;
+}
+
+.ebLogoText {
+    
+}
+
+.ebSectionWrapper {
+    height: fit-content;
+    margin-top: 10%;
+    width: 100%;
+}
+
+.ebSection {
+    color: var(--eb-primary-font-color);
+    
+    display: flex;
+    flex-direction: column;
+    gap: var(--eb-default-inner-space);
+
+    height: fit-content;
+    padding: var(--eb-default-outer-space);
+    position: relative;
+    width: 100%;
+}
+
+.ebSectionInner {
+    align-items: center;
+    display: grid;
+    grid-template-rows: 1fr 0.5fr;
+    grid-template-columns: auto;
+    gap: var(--eb-default-inner-space);
+
+    height: 100%;
+    padding: var(--eb-default-outer-space);
+    width: 100%;
+}
+
+.ebSectionMedia {
+    height: fit-content;
+    width: 100%;
+
+    img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+.ebSectionContent {
+    align-content: center;
+    display: grid;
+    grid-template-rows: 0.4fr auto;
+    grid-template-columns: auto;
+    gap: var(--eb-default-inner-space);
+
+    height: 100%;
+    width: 100%;
+
+    .ebSectionHeader {
+        height: 100%;
+        width: 100%;
+
+        h1 {
+            text-transform: uppercase;
+        }
+
+        h4 {
+            text-transform: uppercase;
+        }
+    }
+
+    .ebSectionBody {
+        display: flex;
+        flex-direction: column;
+        gap: var(--eb-default-inner-space);
+
+        height: 100%;
+        padding: 0 0 0 15%;
+        width: 100%;
+
+        a {
+            height: fit-content;
+            text-transform: uppercase;
+            width: fit-content;
+        }
+    }
+}
+
+.ebSectionReverse {
+
+    .ebSectionInner {
+        grid-template-rows: 0.5fr 1fr;
+
+        .ebSectionMedia {
+            grid-row: 2;
+        }
+    
+        .ebSectionContent {
+            grid-row: 1;
+
+            .ebSectionHeader {
+
+                h1, h4 {
+                    text-align: right;
+                }
+            }
+
+            .ebSectionBody {
+                a {
+                    float: right;
+                }
+
+                p {
+                    text-align: right;
+                }
+            }
+        }
+    }
+}
+
+.ebSectionFull {
+
+    .ebSectionInner {
+        grid-template-rows: auto;
+    }
+}
+
+
+/* TABLET */
+@media (min-width: 768px) {
+    .ebSection {
+    }
+
+    .ebSectionInner {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    
+        height: 100%;
+        width: 100%;
+    }
+
+    .ebSectionContent {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+
+        padding: var(--eb-default-inner-space);
+
+        .ebSectionBody {
+            padding: unset;
+        }
+    }
+
+    .ebSectionReverse {
+
+        .ebSectionInner {
+            grid-template-rows: auto;
+
+            .ebSectionMedia {
+                grid-column: 2;
+                grid-row: 1;
+            }
+        
+            .ebSectionContent {
+                grid-column: 1;
+                grid-row: 1;
+
+                .ebSectionBody {
+                    padding: unset;
+                }
+            }
+        }
+    }
+
+    .ebSectionFull {
+
+        .ebSectionInner {
+            grid-template-rows: auto;
+            grid-template-columns: auto;
+        }
+    }
+}
+
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+    .ebSection {
+        padding: 0 4%;
+    }
+}
+
+
+@media (min-width: 1280px) {
+    .ebSection {
+        padding: 0 8%;
+    }
+}
+
+
+@media (min-width: 1600px) {
+    .ebSection {
+        padding: 0 12%;
+    }
+}
+
+
+@media (min-width: 1920px) {
+    .ebSection {
+        padding: 0 16%;
+    }
+}

@@ -1,0 +1,26 @@
+// ============================================================================= //
+// SRC/APP/STYLES/GLOBALS.SCSS
+// ============================================================================= //
+
+
+
+
+// Base //
+
+//Reset Stylesheet//
+@use '../styles/base/reset';
+
+@use '../styles/base/root';
+@use '../styles/base/base';
+@use '../styles/base/classes';
+@use '../styles/base/font_face';
+@use '../styles/base/typography';
+
+
+// Abstracts //
+@use '../styles/abstracts/color_gradients';
+@use '../styles/abstracts/colors';
+@use '../styles/abstracts/functions';
+@use '../styles/abstracts/mixins';
+@use '../styles/abstracts/placeholders';
+@use '../styles/abstracts/variables';

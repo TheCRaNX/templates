@@ -1,0 +1,69 @@
+// =================================================== //
+// SRC/APP/COMPONENTS/FOOTER/FOOTER.MODULE.SCSS
+// =================================================== //
+
+
+
+
+.ebFooter {
+    background-color: var(--eb-secondary-color);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+    position: relative;
+    height: fit-content;
+    min-height: 50vh;
+    padding: var(--eb-default-outer-space);
+    width: 100vw;
+}
+
+.ebFooterWrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: flex-end;
+
+    height: 100%;
+    width: 100%;
+
+    img {
+        height: auto;
+        margin-bottom: 25px;
+        width: 100%;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .ebIconsWrapper {
+        display: flex;
+        justify-content: space-evenly;
+        gap: var(--eb-default-inner-space);
+
+        height: fit-content;
+        width: fit-content;
+    }
+
+    .ebNavigationWrapper {
+        display: flex;
+        justify-content: space-evenly;
+        gap: var(--eb-default-inner-space);
+
+        height: fit-content;
+        width: fit-content;
+    }
+
+    .ebSloganWrapper {
+        h2 {
+            margin: unset;
+        }
+
+        h5 {
+            margin: unset;
+        }
+    }
+}

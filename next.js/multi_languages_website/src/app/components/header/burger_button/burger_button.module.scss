@@ -1,0 +1,171 @@
+// ============================================================================= //
+// SRC/APP/COMPONENTS/HEADER/BURGER_BUTTON/BURGER_BUTTON.MODULE.SCSS
+// ============================================================================= //
+
+
+
+.ebBurger{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+    width: 100%;
+}
+
+.ebBurgerWrapper{
+    height: fit-content;
+    width: fit-content;
+}
+
+.ebBurgerLine {
+    background-color: var(--eb-primary-font-color);
+    display: block;
+    height: 2px;
+    margin: 8px 0;
+    position: relative;
+    transition: transform var(--eb-navbar-animation-time) ease;
+    width: 25px;
+}
+
+.ebBurgerActive .ebBurgerLine:nth-child(1) {
+    animation: burgerTopLineOpen var(--eb-navbar-animation-time) ease forwards;
+}
+
+.ebBurgerActive .ebBurgerLine:nth-child(2) {
+    opacity: 0;
+}
+
+.ebBurgerActive .ebBurgerLine:nth-child(3) {
+    animation: burgerBottomLineOpen var(--eb-navbar-animation-time) ease forwards;
+}
+
+.ebBurgerClose .ebBurgerLine:nth-child(1) {
+    animation: burgerTopLineClose var(--eb-navbar-animation-time) ease forwards;
+}
+
+.ebBurgerClose .ebBurgerLine:nth-child(2) {
+    opacity: 1; /* Restore visibility */
+}
+
+.ebBurgerClose .ebBurgerLine:nth-child(3) {
+    animation: burgerBottomLineClose var(--eb-navbar-animation-time) ease forwards;
+}
+
+/* Keyframes for opening animations */
+@keyframes burgerTopLineOpen {
+    0% {}
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(10px) rotate(45deg);
+    }
+}
+
+@keyframes burgerBottomLineOpen {
+    0% {}
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(-10px) rotate(-45deg);
+    }
+}
+
+
+@keyframes burgerTopLineClose {
+    0% {
+        transform: translateY(10px) rotate(45deg);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {}
+}
+
+@keyframes burgerBottomLineClose {
+    0% {
+        transform: translateY(-10px) rotate(-45deg);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {}
+}
+
+
+/* LARGE SCREENS */
+@media (min-width: 2560px) {
+    .ebBurgerLine {
+        height: 3px;
+        margin: 10px 0;
+        width: 35px;
+    }
+
+    /* Keyframes for opening animations */
+    @keyframes burgerTopLineOpen {
+        0% {}
+        50% {
+            transform: translateY(11px);
+        }
+        100% {
+            transform: translateY(12px) rotate(45deg);
+        }
+    }
+    
+    @keyframes burgerBottomLineOpen {
+        0% {}
+        50% {
+            transform: translateY(-11px);
+        }
+        100% {
+            transform: translateY(-13px) rotate(-45deg);
+        }
+    }
+}
+
+
+@media (min-width: 3840px) {
+    .ebBurgerLine {
+        height: 4px;
+        margin: 12px 0;
+        width: 45px;
+    }
+
+    /* Keyframes for opening animations */
+    @keyframes burgerTopLineOpen {
+        100% {
+            transform: translateY(13px) rotate(45deg);
+        }
+    }
+    
+    @keyframes burgerBottomLineOpen {
+        100% {
+            transform: translateY(-18px) rotate(-45deg);
+        }
+    }
+}
+
+
+@media (min-width: 5120px) {
+    .ebBurgerLine {
+        height: 5px;
+        margin: 14px 0;
+        width: 55px;
+    }
+
+    /* Keyframes for opening animations */
+    @keyframes burgerTopLineOpen {
+        100% {
+            transform: translateY(16px) rotate(45deg);
+        }
+    }
+    
+    @keyframes burgerBottomLineOpen {
+        100% {
+            transform: translateY(-21px) rotate(-45deg);
+        }
+    }
+}

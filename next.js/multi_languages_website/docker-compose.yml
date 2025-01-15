@@ -1,0 +1,20 @@
+services:
+  ehinger_bau:
+    build: .
+    container_name: ehinger_bau
+    restart: unless-stopped
+    labels:
+      traefik.enable: true
+      traefik.http.routers.ehinger-bau.entrypoints: https
+      
+      traefik.http.routers.ehinger-bau.rule: Host(`ehinger-bau.thecranx.de`)
+      traefik.http.routers.ehinger-bau.tls: true
+      traefik.http.routers.ehinger-bau.service: ehinger-bau
+      traefik.http.services.ehinger-bau.loadbalancer.server.port: 3000
+      traefik.docker.network: proxy
+    networks:
+      - proxy
+
+networks:
+  proxy:
+    external: true
