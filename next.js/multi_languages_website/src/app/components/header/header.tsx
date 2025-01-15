@@ -15,7 +15,7 @@
 // ====================
 // 2. Import Components
 // ====================
-import { useToggle } from '@/context/toggle_context';
+import { useNavbarToggle } from '@/context/navbar_context';
 import HeaderBurgerButton from './burger_button/burger_button';
 
 
@@ -32,12 +32,12 @@ import styles from './header.module.scss';
 // 4. Component
 // ============
 const Header = () => {
-    const { ebIsToggled, toggle } = useToggle();
+    const { cstmIsNavbarToggled, toggle } = useNavbarToggle();
     
     return (
       <header className={styles.cstmHeader}>
         <div className={styles.cstmButtonWrapper}>
-          <HeaderBurgerButton ebIsToggled={ebIsToggled} ebBasicToggle={toggle} />
+          <HeaderBurgerButton cstmIsNavbarToggled={cstmIsNavbarToggled} ebBasicToggle={toggle} />
         </div>
       </header>
     );

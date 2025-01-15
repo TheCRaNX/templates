@@ -17,8 +17,8 @@ import React, { createContext, useContext, useState } from "react";
 // 2. Define Types
 // ===============
 interface ToggleContextType {
-  ebIsToggled: boolean;
-  setEbIsToggled: (value: boolean) => void;
+  cstmIsNavbarToggled: boolean;
+  setNavbarIsToggled: (value: boolean) => void;
   toggle: () => void;
 }
 
@@ -35,21 +35,21 @@ const ToggleContext = createContext<ToggleContextType | undefined>(undefined);
 // 4. Export Component
 // ===================
 export const ToggleProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [ebIsToggled, setEbIsToggled] = useState(false);
+  const [cstmIsNavbarToggled, setNavbarIsToggled] = useState(false);
 
-  const toggle = () => setEbIsToggled((prev) => !prev);
+  const toggle = () => setNavbarIsToggled((prev) => !prev);
 
   return (
-    <ToggleContext.Provider value={{ ebIsToggled, setEbIsToggled, toggle }}>
+    <ToggleContext.Provider value={{ cstmIsNavbarToggled, setNavbarIsToggled, toggle }}>
       {children}
     </ToggleContext.Provider>
   );
 };
 
-export const useToggle = (): ToggleContextType => {
+export const useNavbarToggle = (): ToggleContextType => {
   const context = useContext(ToggleContext);
   if (!context) {
-    throw new Error("useToggle must be used within a ToggleProvider");
+    throw new Error("useNavbarToggle must be used within a ToggleProvider");
   }
   return context;
 };

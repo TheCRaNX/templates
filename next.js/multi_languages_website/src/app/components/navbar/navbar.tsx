@@ -42,11 +42,11 @@ import styles from './navbar.module.scss';
 // 5. Component
 // ============
 interface NavbarProps {
-  ebIsToggled: boolean;
+  cstmIsNavbarToggled: boolean;
   ebBasicToggle: () => void;
 }
   
-const Navbar: React.FC<NavbarProps> = ({ ebIsToggled, ebBasicToggle }) => {
+const Navbar: React.FC<NavbarProps> = ({ cstmIsNavbarToggled, ebBasicToggle }) => {
   const ial = useTranslations('ImageAltLabels');
   const t = useTranslations('Navbar');
 
@@ -55,7 +55,7 @@ const Navbar: React.FC<NavbarProps> = ({ ebIsToggled, ebBasicToggle }) => {
   };
 
   return (
-    <nav className={`${styles.cstmNavbar} ${ebIsToggled ? styles.cstmNavbarActive : ''}`}>
+    <nav className={`${styles.cstmNavbar} ${cstmIsNavbarToggled ? styles.cstmNavbarActive : ''}`}>
       <div className={styles.cstmNavbarWrapper}>
           <Link href="/"  onClick={handleClick}>
           <Image
@@ -68,7 +68,7 @@ const Navbar: React.FC<NavbarProps> = ({ ebIsToggled, ebBasicToggle }) => {
           />
           </Link>
   
-          <ul className={`${styles.cstmNavbarElement, styles.cstmList} ${ebIsToggled ? styles.cstmNavbarElementActive : styles.cstmNavbarElementInActive}`}>
+          <ul className={`${styles.cstmNavbarElement, styles.cstmList} ${cstmIsNavbarToggled ? styles.cstmNavbarElementActive : styles.cstmNavbarElementInActive}`}>
               <li>
                   <NavigationLink href="/about"  onClick={handleClick}>{t('about')}</NavigationLink>
               </li>
@@ -77,7 +77,7 @@ const Navbar: React.FC<NavbarProps> = ({ ebIsToggled, ebBasicToggle }) => {
               </li>
           </ul>
   
-          <div className={`${styles.cstmNavbarElement} ${ebIsToggled ? styles.cstmNavbarElementActive : styles.cstmNavbarElementInActive}`}>
+          <div className={`${styles.cstmNavbarElement} ${cstmIsNavbarToggled ? styles.cstmNavbarElementActive : styles.cstmNavbarElementInActive}`}>
               <LocaleSwitcher />
           </div>
       </div>

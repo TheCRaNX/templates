@@ -21,7 +21,7 @@ import { routing } from '@/i18n/routing';
 // ====================
 import { CanvasWrapper } from "../components/canvas/canvas";
 import { OverflowProvider } from "@/context/overflow_context";
-import { ToggleProvider } from "@/context/toggle_context";
+import { ToggleProvider } from "@/context/navbar_context";
 
 
 

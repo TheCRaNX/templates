@@ -19,7 +19,7 @@ import Footer from "../footer/footer";
 import Header from "../header/header";
 import Navbar from '../navbar/navbar';
 import { useToggleOverflow } from "@/context/overflow_context";
-import { useToggle } from "@/context/toggle_context";
+import { useNavbarToggle } from "@/context/navbar_context";
 
 
 
@@ -34,15 +34,15 @@ import styles from "./canvas.module.scss";
 // 3. Export Component
 // ===================
 export const CanvasWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const { ebIsToggled, toggle } = useToggle();
+  const { cstmIsNavbarToggled, toggle } = useNavbarToggle();
   const { ebIsOverflowToggled } = useToggleOverflow();
 
   return (
     <div className={`${styles.cstmCanvas} cstmNoHorizontalOverflow`}>
 
-      <Navbar ebIsToggled={ebIsToggled} ebBasicToggle={toggle} /> 
+      <Navbar cstmIsNavbarToggled={cstmIsNavbarToggled} ebBasicToggle={toggle} /> 
       
-      <div className={`${styles.cstmContent} ${ebIsToggled ? styles.cstmNavbarActive : ""} ${ebIsOverflowToggled ? "cstmNoOverflow" : ""}`}>
+      <div className={`${styles.cstmContent} ${cstmIsNavbarToggled ? styles.cstmNavbarActive : ""} ${ebIsOverflowToggled ? "cstmNoOverflow" : ""}`}>
         <Header />
         
         {children}

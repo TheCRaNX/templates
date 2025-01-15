@@ -30,11 +30,11 @@ import styles from './burger_button.module.scss';
 // 4. Component
 // ============
 interface HeaderBurgerButtonProps {
-  ebIsToggled: boolean;
+  cstmIsNavbarToggled: boolean;
   ebBasicToggle: () => void;
 }
 
-const HeaderBurgerButton = ({ ebIsToggled, ebBasicToggle }: HeaderBurgerButtonProps) => {
+const HeaderBurgerButton = ({ cstmIsNavbarToggled, ebBasicToggle }: HeaderBurgerButtonProps) => {
   const [isAnimating, setIsAnimating] = useState<null | boolean>(null);
 
   const handleClick = () => {
@@ -47,7 +47,7 @@ const HeaderBurgerButton = ({ ebIsToggled, ebBasicToggle }: HeaderBurgerButtonPr
       className={`${styles.cstmBurger} ${
         isAnimating === null
           ? ""
-          : ebIsToggled
+          : cstmIsNavbarToggled
           ? styles.cstmBurgerActive
           : styles.cstmBurgerClose
     }`}
