@@ -1,16 +1,16 @@
 services:
-  ehinger_bau:
+  multi_languages_website:
     build: .
-    container_name: ehinger_bau
+    container_name: multi_languages_website
     restart: unless-stopped
     labels:
       traefik.enable: true
-      traefik.http.routers.ehinger-bau.entrypoints: https
+      traefik.http.routers.multi_languages_website.entrypoints: https
       
-      traefik.http.routers.ehinger-bau.rule: Host(`ehinger-bau.thecranx.de`)
-      traefik.http.routers.ehinger-bau.tls: true
-      traefik.http.routers.ehinger-bau.service: ehinger-bau
-      traefik.http.services.ehinger-bau.loadbalancer.server.port: 3000
+      traefik.http.routers.multi_languages_website.rule: Host(`yourdomain.com`)
+      traefik.http.routers.multi_languages_website.tls: true
+      traefik.http.routers.multi_languages_website.service: multi_languages_website
+      traefik.http.services.multi_languages_website.loadbalancer.server.port: yourport
       traefik.docker.network: proxy
     networks:
       - proxy
