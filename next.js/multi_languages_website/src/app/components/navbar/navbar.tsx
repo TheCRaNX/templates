@@ -47,6 +47,7 @@ interface NavbarProps {
 }
   
 const Navbar: React.FC<NavbarProps> = ({ ebIsToggled, ebBasicToggle }) => {
+  const ial = useTranslations('ImageAltLabels');
   const t = useTranslations('Navbar');
 
   const handleClick = () => {
@@ -54,32 +55,29 @@ const Navbar: React.FC<NavbarProps> = ({ ebIsToggled, ebBasicToggle }) => {
   };
 
   return (
-    <nav className={`${styles.ebNavbar} ${ebIsToggled ? styles.ebNavbarActive : ''}`}>
-      <div className={styles.ebNavbarWrapper}>
+    <nav className={`${styles.cstmNavbar} ${ebIsToggled ? styles.cstmNavbarActive : ''}`}>
+      <div className={styles.cstmNavbarWrapper}>
           <Link href="/"  onClick={handleClick}>
           <Image
-              className={styles.ebLogo}
-              src="/logo.png"
-              alt={t('logo_alt')}
+              className={styles.cstmLogo}
+              src="/logos/logo.png"
+              alt={ial('logo')}
               width={180}
               height={38}
               priority
           />
           </Link>
   
-          <ul className={`${styles.ebNavbarElement, styles.ebList} ${ebIsToggled ? styles.ebNavbarElementActive : styles.ebNavbarElementInActive}`}>
+          <ul className={`${styles.cstmNavbarElement, styles.cstmList} ${ebIsToggled ? styles.cstmNavbarElementActive : styles.cstmNavbarElementInActive}`}>
               <li>
                   <NavigationLink href="/about"  onClick={handleClick}>{t('about')}</NavigationLink>
-              </li>
-              <li>
-                  <NavigationLink href="/projects"  onClick={handleClick}>{t('projects')}</NavigationLink>
               </li>
               <li>
                   <NavigationLink href="/contact"  onClick={handleClick}>{t('contact')}</NavigationLink>
               </li>
           </ul>
   
-          <div className={`${styles.ebNavbarElement} ${ebIsToggled ? styles.ebNavbarElementActive : styles.ebNavbarElementInActive}`}>
+          <div className={`${styles.cstmNavbarElement} ${ebIsToggled ? styles.cstmNavbarElementActive : styles.cstmNavbarElementInActive}`}>
               <LocaleSwitcher />
           </div>
       </div>

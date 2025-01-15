@@ -5,24 +5,24 @@
 
 
 
-.ebCanvas{
-    background-color: var(--eb-primary-color);
+.cstmCanvas{
+    background-color: var(--cstm-primary-color);
 
     height: 100%;
     position: relative;
     width: 100%;
 }
 
-.ebContent{
+.cstmContent{
     height: 100%;
     position: relative;
     width: 100%;
-    transition: transform var(--eb-navbar-animation-time) ease;
+    transition: transform var(--cstm-navbar-animation-time) ease;
 }
 
-.ebNavbarActive{
-    transform: translateX(calc(76% + var(--eb-default-outer-space))) translateZ(0px);
-    transition: transform var(--eb-navbar-animation-time) ease;
+.cstmNavbarActive{
+    transform: translateX(calc(76% + var(--cstm-default-outer-space))) translateZ(0px);
+    transition: transform var(--cstm-navbar-animation-time) ease;
 
     overflow: hidden;
 }

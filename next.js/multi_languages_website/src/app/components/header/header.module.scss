@@ -5,20 +5,20 @@
 
 
 
-.ebHeader {
+.cstmHeader {
     height: 75px;
-    padding: var(--eb-default-outer-space);
+    padding: var(--cstm-default-outer-space);
     position: absolute;
     width: 100vw;
     z-index: 1000;
 }
 
-.ebButtonWrapper{
-    border: 2px solid var(--eb-primary-font-color);
-    background-color: var(--eb-primary-color);
+.cstmButtonWrapper{
+    border: 2px solid var(--cstm-primary-font-color);
+    background-color: var(--cstm-primary-color);
     height: 45px;
-    top: var(--eb-default-outer-space);
-    left: var(--eb-default-outer-space);
+    top: var(--cstm-default-outer-space);
+    left: var(--cstm-default-outer-space);
 
     width: 45px;
     z-index: 1000;
@@ -27,7 +27,7 @@
 
 /* LARGE SCREENS */
 @media (min-width: 2560px) {
-    .ebButtonWrapper{
+    .cstmButtonWrapper{
         height: 80px;
         width: 80px;
     }
@@ -35,7 +35,7 @@
 
 
 @media (min-width: 3840px) {
-    .ebButtonWrapper{
+    .cstmButtonWrapper{
         height: 100px;
         width: 100px;
     }
@@ -43,7 +43,7 @@
 
 
 @media (min-width: 5120px) {
-    .ebButtonWrapper{
+    .cstmButtonWrapper{
         height: 120px;
         width: 120px;
     }

@@ -40,9 +40,10 @@ import styles from "./page.module.scss";
 const ContactPage = () => {
     const c = useTranslations('ContactDetails');
     const t = useTranslations('ContactPage');
+    const gi = useTranslations('GeneralInformation');
     
     return (      
-        <div className={styles.ebContact}>
+        <div className={styles.cstmContact}>
             <SubPagesLayout
                 headerContent={
                     <h1>
@@ -51,26 +52,26 @@ const ContactPage = () => {
                 }
                 
                 footerContent={
-                    <div className={styles.ebMapWrapper}>
-                        <Map />
+                    <div className={styles.cstmMapWrapper}>
+                        <Map
+                            coordinates={[35.704074, 139.557732]}
+                            title={gi('app_name')}
+                            address={{ __html: c.raw('address') }}
+                        />
                     </div>
                 }
                 >
 
-                <div className={styles.ebContactBox}>
-                    <div className={styles.ebTextWrapper}>
-                        <p className={styles.ebCompany}>
-                            Ehinger
-                            <br></br>
-                            Bau
-                        </p>
+                <div className={styles.cstmContactBox}>
+                    <div className={styles.cstmTextWrapper}>
+                        <p dangerouslySetInnerHTML={{__html: c.raw('name')}} className={styles.cstmCompany}></p>
                         <p dangerouslySetInnerHTML={{__html: c.raw('address')}} className={styles.ebAddress}></p>
                         <p className={styles.ebContactInformation}>
-                            +49 0721 123456789
+                            {c('telephone')}
                             <br></br>
-                            info@ehinger-bau.de
+                            {c('email')}
                         </p>
-                        <a className={styles.ebMailRedirection}>
+                        <a className={styles.cstmMailRedirection}>
                             / {t('email_redirect')}
                         </a>
                     </div>

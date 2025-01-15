@@ -4,19 +4,19 @@
 
 
 
-.ebPrivacyPolicy{
-    background-color: var(--eb-primary-color);
+.cstmPrivacyPolicy{
+    background-color: var(--cstm-primary-color);
     height: fit-content;
     min-height: 50vh;
     width: 100%;
 }
 
-.ebTextWrapper {
+.cstmTextWrapper {
     height: 100%;
     width: 100%;
 
     h4 {
-        margin: 0 0 var(--eb-default-outer-space) 0;
+        margin: 0 0 var(--cstm-default-outer-space) 0;
     }
 
     h6 {
@@ -24,6 +24,6 @@
     }
 
     p {
-        margin: 0 0 var(--eb-default-outer-space) 0;
+        margin: 0 0 var(--cstm-default-outer-space) 0;
     }
 }

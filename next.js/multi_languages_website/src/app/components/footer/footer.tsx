@@ -45,15 +45,16 @@ import styles from './footer.module.scss';
 const Footer = () => {
     const c = useTranslations('ContactDetails');
     const t = useTranslations('Footer');
+    const ial = useTranslations('ImageAltLabels');
 
     return (
-        <footer className={styles.ebFooter}>
-            <div className={styles.ebFooterWrapper}>
+        <footer className={styles.cstmFooter}>
+            <div className={styles.cstmFooterWrapper}>
 
                 <Link href="/">
                 <Image
-                    src="/logo.png"
-                    alt={t('logo_alt')}
+                    src="/logos/logo.png"
+                    alt={ial('logo')}
                     width={180}
                     height={38}
                     priority
@@ -61,12 +62,12 @@ const Footer = () => {
                 </Link>
 
                 <p>
-                    {c('address_stress')}
+                    {c('address_street')}
                     <br></br>
                     {c('address_zip')} {c('address_city')} - {c('address_country')}
                 </p>
 
-                <div className={styles.ebSloganWrapper}>
+                <div className={styles.cstmSloganWrapper}>
                     <h5>
                         {t('slogan')}
                     </h5>
@@ -75,14 +76,14 @@ const Footer = () => {
                     </h2>
                 </div>
 
-                <div className={styles.ebIconsWrapper}>
+                <div className={styles.cstmIconsWrapper}>
                     <FontAwesomeIcon icon={faPhone} />
                     <FontAwesomeIcon icon={faEnvelope} />
                     <FontAwesomeIcon icon={faFacebook} />
                     <FontAwesomeIcon icon={faInstagram} />
                 </div>
 
-                <div className={styles.ebNavigationWrapper}>
+                <div className={styles.cstmNavigationWrapper}>
                     <Link href="/imprint">{t('imprint')}</Link>
                     <span>|</span>
                     <Link href="/privacy_policy">{t('privacy_policy')}</Link>

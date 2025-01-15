@@ -30,9 +30,9 @@ interface SubPagesProps {
 
 const SubPagesLayout: React.FC<SubPagesProps> = ({ children, headerContent, footerContent }) => {
   return (
-    <div className={styles.ebSubPagesLayout}>
-      <div className={styles.ebSubPagesLayoutWrapper}>
-        <header className={styles.ebSubPagesHeader}>
+    <div className={styles.cstmSubPagesLayout}>
+      <div className={styles.cstmSubPagesLayoutWrapper}>
+        <header className={styles.cstmSubPagesHeader}>
           { headerContent || <h1>Default Header</h1> }
         </header>
         { children }

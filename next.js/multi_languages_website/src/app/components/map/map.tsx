@@ -34,15 +34,26 @@ import styles from './map.module.scss';
 
 
 
+// ===============
+// 5. Define Props
+// ===============
+interface MapProps {
+    coordinates: [number, number];
+    title: string;
+    address: string | { __html: string };
+}
+
+
+
 // ============
-// 5. Component
+// 6. Component
 // ============
 const DynamicMap = dynamic(() => import('./dynamic_map'), { ssr: false });
 
-const Map = () => {
+const Map: React.FC<MapProps> = ({ coordinates, title, address }) => {
     return (
-        <div className={styles.ebMap}>
-            <DynamicMap />
+        <div className={styles.cstmMap}>
+            <DynamicMap coordinates={coordinates} title={title} address={address} />
         </div>
     );
 };
@@ -50,6 +61,6 @@ const Map = () => {
 
 
 // ===================
-// 6. Export Component
+// 7. Export Component
 // ===================
 export default Map;

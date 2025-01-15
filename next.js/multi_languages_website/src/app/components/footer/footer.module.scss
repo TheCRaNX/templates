@@ -5,8 +5,8 @@
 
 
 
-.ebFooter {
-    background-color: var(--eb-secondary-color);
+.cstmFooter {
+    background-color: var(--cstm-secondary-color);
 
     display: flex;
     flex-direction: column;
@@ -15,11 +15,11 @@
     position: relative;
     height: fit-content;
     min-height: 50vh;
-    padding: var(--eb-default-outer-space);
+    padding: var(--cstm-default-outer-space);
     width: 100vw;
 }
 
-.ebFooterWrapper {
+.cstmFooterWrapper {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -39,25 +39,25 @@
         text-align: center;
     }
 
-    .ebIconsWrapper {
+    .cstmIconsWrapper {
         display: flex;
         justify-content: space-evenly;
-        gap: var(--eb-default-inner-space);
+        gap: var(--cstm-default-inner-space);
 
         height: fit-content;
         width: fit-content;
     }
 
-    .ebNavigationWrapper {
+    .cstmNavigationWrapper {
         display: flex;
         justify-content: space-evenly;
-        gap: var(--eb-default-inner-space);
+        gap: var(--cstm-default-inner-space);
 
         height: fit-content;
         width: fit-content;
     }
 
-    .ebSloganWrapper {
+    .cstmSloganWrapper {
         h2 {
             margin: unset;
         }

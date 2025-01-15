@@ -18,6 +18,7 @@
 /out/
 
 next.js/multi_languages_website/node_modules
+next.js/multi_languages_website/.next/
 
 # production
 /build

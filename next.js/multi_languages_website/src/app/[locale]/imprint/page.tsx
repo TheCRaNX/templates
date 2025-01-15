@@ -36,7 +36,7 @@ const ImprintPage = () => {
     const it = useTranslations('TextsImprintText');
     
     return (      
-        <div className={styles.ebImprint}>
+        <div className={styles.cstmImprint}>
             <SubPagesLayout
             headerContent={
                 <h1>
@@ -45,7 +45,7 @@ const ImprintPage = () => {
             }
             >
             
-            <div className={styles.ebTextWrapper}>
+            <div className={styles.cstmTextWrapper}>
                 <p>
                     {it('introduction')}
                 </p>
@@ -164,7 +164,6 @@ const ImprintPage = () => {
                     {it('notice_general_equal_treatment_act_text')}
                 </p>
 
-<<<<<<< HEAD
                 <p>
                     {it('generator_source_link_text_part_1')}
                     &nbsp;
@@ -174,59 +173,6 @@ const ImprintPage = () => {
                     &nbsp;
                     <Link href="https://www.kanzlei-hasselbach.de/rechtsgebiete/familienrecht/" target="_blank">{it('lawyer_source_link_text')}</Link>
                 </p>
-=======
-            <h6>
-                {it('liability_for_content_title')}
-            </h6>
-            <p>
-                {it('liability_for_content_text')} 
-            </p>
-
-            <h6>
-                {it('liability_for_links_title')}
-            </h6>
-            <p>
-                {it('liability_for_links_text')}
-            </p>
-
-            <h6>
-                {it('copyright_title')}
-            </h6>
-            <p>
-                {it('copyright_text')}
-            </p>
-
-            <h6>
-                {it('privacy_policy_title')}
-            </h6>
-            <p>
-                {it('privacy_policy_text')}
-            </p>
-
-            <h6>
-                {it('google_analytics_title')}
-            </h6>
-            <p>
-                {it('google_analytics_text')} 
-            </p>
-
-            <h6>
-                {it('severability_clause_title')}
-            </h6>
-            <p>
-                {it('severability_clause_text')}
-            </p>
-           
-            <h6>
-                {it('notice_general_equal_treatment_act_title')}
-            </h6>
-            <p>
-                {it('notice_general_equal_treatment_act_text')}
-            </p>
-
-            <div id="link">
-                Website Impressum von <a href="https://www.impressum-generator.de">impressum-generator.de</a>
->>>>>>> 671cf4f (Added soure link;)
             </div>
             </SubPagesLayout>
         </div>

@@ -6,12 +6,12 @@
 
 
 body {
-    color: var(--eb-primary-font-color);
-    font-size: var(--eb-default-font-size);
+    color: var(--cstm-primary-font-color);
+    font-size: var(--cstm-default-font-size);
 }
 
 a {
-    color: var(--eb-link-color);
+    color: var(--cstm-link-color);
     text-decoration: none;
 }
 
@@ -43,7 +43,7 @@ h6 {
 /* TABLET */
 @media (min-width: 768px) {
     body {
-        font-size: var(--eb-default-font-size);
+        font-size: var(--cstm-default-font-size);
     }
 
     h1 {
@@ -75,7 +75,7 @@ h6 {
 /* DESKTOP */
 @media (min-width: 1024px) {
     body {
-        font-size: var(--eb-default-font-size);
+        font-size: var(--cstm-default-font-size);
     }
 
     h1 {
@@ -107,7 +107,7 @@ h6 {
 /* LARGE SCREENS */
 @media (min-width: 2560px) {
     body {
-        font-size: var(--eb-default-font-size);
+        font-size: var(--cstm-default-font-size);
     }
 
     h1 {
@@ -138,7 +138,7 @@ h6 {
 
 @media (min-width: 3840px) {
     body {
-        font-size: var(--eb-default-font-size);
+        font-size: var(--cstm-default-font-size);
     }
 
     h1 {
@@ -169,7 +169,7 @@ h6 {
 
 @media (min-width: 5120px) {
     body {
-        font-size: var(--eb-default-font-size);
+        font-size: var(--cstm-default-font-size);
     }
 
     h1 {

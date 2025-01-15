@@ -37,7 +37,7 @@ const PrivacyPolicyPage = () => {
     const pp = useTranslations('TextsPrivacyPolicyText');
     
     return (      
-        <div className={styles.ebPrivacyPolicy}>
+        <div className={styles.cstmPrivacyPolicy}>
             <SubPagesLayout
             headerContent={
                 <h1>
@@ -46,7 +46,7 @@ const PrivacyPolicyPage = () => {
             }
             >
             
-            <div className={styles.ebTextWrapper}>
+            <div className={styles.cstmTextWrapper}>
                 <h4>
                     1. {pp('privacy_policy_nutshell_title')}
                 </h4>

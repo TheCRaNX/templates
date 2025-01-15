@@ -35,8 +35,8 @@ const Header = () => {
     const { ebIsToggled, toggle } = useToggle();
     
     return (
-      <header className={styles.ebHeader}>
-        <div className={styles.ebButtonWrapper}>
+      <header className={styles.cstmHeader}>
+        <div className={styles.cstmButtonWrapper}>
           <HeaderBurgerButton ebIsToggled={ebIsToggled} ebBasicToggle={toggle} />
         </div>
       </header>

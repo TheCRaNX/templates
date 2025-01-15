@@ -3,30 +3,30 @@
 // ============================================================================= //
 
 
-.ebNoOverflow {
+.cstmNoOverflow {
     overflow: hidden;
 }
 
-.ebNoHorizontalOverflow {
+.cstmNoHorizontalOverflow {
     overflow-x: hidden;
 }
 
-.ebBackgroundColorPrimary {
-    background-color: var(--eb-primary-color);
+.cstmBackgroundColorPrimary {
+    background-color: var(--cstm-primary-color);
 }
 
-.ebBackgroundColorSecondary {
-    background-color: var(--eb-secondary-color);
+.cstmBackgroundColorSecondary {
+    background-color: var(--cstm-secondary-color);
 }
 
-.ebTextAlignLeft {
+.cstmTextAlignLeft {
     text-align: left;
 }
 
-.ebTextAlignCenter {
+.cstmTextAlignCenter {
     text-align: center;
 }
 
-.ebTextAlignRight {
+.cstmTextAlignRight {
     text-align: right;
 }

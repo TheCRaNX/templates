@@ -44,18 +44,18 @@ const HeaderBurgerButton = ({ ebIsToggled, ebBasicToggle }: HeaderBurgerButtonPr
 
   return (
     <div
-      className={`${styles.ebBurger} ${
+      className={`${styles.cstmBurger} ${
         isAnimating === null
           ? ""
           : ebIsToggled
-          ? styles.ebBurgerActive
-          : styles.ebBurgerClose
+          ? styles.cstmBurgerActive
+          : styles.cstmBurgerClose
     }`}
     >
-      <div className={styles.ebBurgerWrapper} onClick={handleClick}>
-        <span className={styles.ebBurgerLine}></span>
-        <span className={styles.ebBurgerLine}></span>
-        <span className={styles.ebBurgerLine}></span>
+      <div className={styles.cstmBurgerWrapper} onClick={handleClick}>
+        <span className={styles.cstmBurgerLine}></span>
+        <span className={styles.cstmBurgerLine}></span>
+        <span className={styles.cstmBurgerLine}></span>
       </div>
     </div>
   );

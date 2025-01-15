@@ -5,8 +5,8 @@
 
 
 
-.ebNavbar {
-    background-color: var(--eb-secondary-color);
+.cstmNavbar {
+    background-color: var(--cstm-secondary-color);
     position: fixed;
     top: 0;
     left: 0;
@@ -15,9 +15,9 @@
 
     visibility: hidden;
     opacity: 0;
-    transition: visibility 0s var(--eb-navbar-animation-time), opacity var(--eb-navbar-animation-time) ease;
+    transition: visibility 0s var(--cstm-navbar-animation-time), opacity var(--cstm-navbar-animation-time) ease;
 
-    .ebLogo {
+    .cstmLogo {
         height: 150px;
         margin-top: 75px;
         width: auto;
@@ -29,17 +29,17 @@
     }
 }
 
-.ebNavbarWrapper {
+.cstmNavbarWrapper {
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: var(--eb-default-outer-space);
+    gap: var(--cstm-default-outer-space);
     justify-content: flex-start;
 
     height: 100%;
     width: 100%;
 
-    .ebList {
+    .cstmList {
         list-style-type: none;
         margin: 0;
         padding: 0;
@@ -50,39 +50,39 @@
     }
 }
 
-.ebNavbarActive {
+.cstmNavbarActive {
     visibility: visible;
     opacity: 1;
     transition: visibility 0s, opacity 3s ease;
 }
 
 
-.ebNavbarElement {
+.cstmNavbarElement {
     height: fit-content;
     width: fit-content;
     opacity: 0;
     visibility: hidden;
-    transition: opacity var(--eb-navbar-animation-time) ease, visibility 0s var(--eb-navbar-animation-time);
+    transition: opacity var(--cstm-navbar-animation-time) ease, visibility 0s var(--cstm-navbar-animation-time);
 }
 
 
-.ebNavbarElementActive {
+.cstmNavbarElementActive {
     opacity: 1;
     visibility: visible;
     transition: opacity 3s ease, visibility 0s;
 }
 
 
-.ebNavbarElementInActive {
+.cstmNavbarElementInActive {
     opacity: 0;
     visibility: hidden;
-    transition: opacity var(--eb-navbar-animation-time) ease, visibility 0s var(--eb-navbar-animation-time);
+    transition: opacity var(--cstm-navbar-animation-time) ease, visibility 0s var(--cstm-navbar-animation-time);
 }
 
 
 /* LARGE SCREENS */
 @media (min-width: 2560px) {
-    .ebNavbar {    
+    .cstmNavbar {    
         a {
             font-size: 48px;
         }
@@ -91,7 +91,7 @@
 
 
 @media (min-width: 3840px) {
-    .ebNavbar {    
+    .cstmNavbar {    
         a {
             font-size: 72px;
         }
@@ -100,7 +100,7 @@
 
 
 @media (min-width: 5120px) {
-    .ebNavbar {    
+    .cstmNavbar {    
         a {
             font-size: 96px;
         }

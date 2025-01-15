@@ -5,23 +5,23 @@
 
 
 
-.ebSubPagesLayout{
+.cstmSubPagesLayout {
     height: 100%;
     width: 100%;
 }
 
-.ebSubPagesLayoutWrapper{
+.cstmSubPagesLayoutWrapper {
     height: 100%;
-    padding: 75px var(--eb-default-outer-space);
+    padding: 75px var(--cstm-default-outer-space);
     width: 100%;
 }
 
-.ebSubPagesHeader{
+.cstmSubPagesHeader {
     display: flex;
     justify-content: center;
     
     height: fit-content;
-    margin-bottom: var(--eb-default-outer-space);
+    margin-bottom: var(--cstm-default-outer-space);
     width: 100%;
 
     h1 {
@@ -31,7 +31,7 @@
 
 /* TABLET */
 @media (min-width: 768px) {
-    .ebSubPagesLayoutWrapper {
+    .cstmSubPagesLayoutWrapper {
         padding: 75px 10%;
     }
 }
@@ -39,21 +39,21 @@
 
 /* DESKTOP */
 @media (min-width: 1024px) {
-    .ebSubPagesLayoutWrapper {
+    .cstmSubPagesLayoutWrapper {
         padding: 75px 12%;
     }
 }
 
 
 @media (min-width: 1440px) {
-    .ebSubPagesLayoutWrapper {
+    .cstmSubPagesLayoutWrapper {
         padding: 75px 15%;
     }
 }
 
 
 @media (min-width: 1920px) {
-    .ebSubPagesLayoutWrapper {
+    .cstmSubPagesLayoutWrapper {
         padding: 75px 18%;
     }
 }

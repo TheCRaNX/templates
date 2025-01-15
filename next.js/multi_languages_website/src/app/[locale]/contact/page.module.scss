@@ -4,15 +4,15 @@
 
 
 
-.ebContact {
-    background-color: var(--eb-primary-color);
+.cstmContact {
+    background-color: var(--cstm-primary-color);
 
     height: fit-content;
     min-height: 50vh;
     width: 100%;
 }
 
-.ebContactBox {
+.cstmContactBox {
     display: flex;
     justify-content: center;
 
@@ -20,11 +20,11 @@
     width: 100%;
 }
 
-.ebTextWrapper {
+.cstmTextWrapper {
     align-items: center;
     display: flex;
     flex-direction: column;
-    gap: var(--eb-default-inner-space);
+    gap: var(--cstm-default-inner-space);
 
     height: 100%;
     width: 100%;
@@ -35,18 +35,18 @@
         width: 40%;
     }
 
-    .ebCompany {
+    .cstmCompany {
         text-transform: uppercase;
     }
 
-    .ebMailRedirection {
-        color: var(--eb-link-color);
+    .cstmMailRedirection {
+        color: var(--cstm-link-color);
         text-transform: uppercase;
         width: 40%;
     }
 }
 
-.ebMapWrapper {
+.cstmMapWrapper {
     height: auto;
     width: 100%;
 }

@@ -4,7 +4,7 @@
 
 
 
-.ebBurger{
+.cstmBurger{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,43 +14,43 @@
     width: 100%;
 }
 
-.ebBurgerWrapper{
+.cstmBurgerWrapper{
     height: fit-content;
     width: fit-content;
 }
 
-.ebBurgerLine {
-    background-color: var(--eb-primary-font-color);
+.cstmBurgerLine {
+    background-color: var(--cstm-primary-font-color);
     display: block;
     height: 2px;
     margin: 8px 0;
     position: relative;
-    transition: transform var(--eb-navbar-animation-time) ease;
+    transition: transform var(--cstm-navbar-animation-time) ease;
     width: 25px;
 }
 
-.ebBurgerActive .ebBurgerLine:nth-child(1) {
-    animation: burgerTopLineOpen var(--eb-navbar-animation-time) ease forwards;
+.cstmBurgerActive .cstmBurgerLine:nth-child(1) {
+    animation: burgerTopLineOpen var(--cstm-navbar-animation-time) ease forwards;
 }
 
-.ebBurgerActive .ebBurgerLine:nth-child(2) {
+.cstmBurgerActive .cstmBurgerLine:nth-child(2) {
     opacity: 0;
 }
 
-.ebBurgerActive .ebBurgerLine:nth-child(3) {
-    animation: burgerBottomLineOpen var(--eb-navbar-animation-time) ease forwards;
+.cstmBurgerActive .cstmBurgerLine:nth-child(3) {
+    animation: burgerBottomLineOpen var(--cstm-navbar-animation-time) ease forwards;
 }
 
-.ebBurgerClose .ebBurgerLine:nth-child(1) {
-    animation: burgerTopLineClose var(--eb-navbar-animation-time) ease forwards;
+.cstmBurgerClose .cstmBurgerLine:nth-child(1) {
+    animation: burgerTopLineClose var(--cstm-navbar-animation-time) ease forwards;
 }
 
-.ebBurgerClose .ebBurgerLine:nth-child(2) {
+.cstmBurgerClose .cstmBurgerLine:nth-child(2) {
     opacity: 1; /* Restore visibility */
 }
 
-.ebBurgerClose .ebBurgerLine:nth-child(3) {
-    animation: burgerBottomLineClose var(--eb-navbar-animation-time) ease forwards;
+.cstmBurgerClose .cstmBurgerLine:nth-child(3) {
+    animation: burgerBottomLineClose var(--cstm-navbar-animation-time) ease forwards;
 }
 
 /* Keyframes for opening animations */
@@ -98,7 +98,7 @@
 
 /* LARGE SCREENS */
 @media (min-width: 2560px) {
-    .ebBurgerLine {
+    .cstmBurgerLine {
         height: 3px;
         margin: 10px 0;
         width: 35px;
@@ -128,7 +128,7 @@
 
 
 @media (min-width: 3840px) {
-    .ebBurgerLine {
+    .cstmBurgerLine {
         height: 4px;
         margin: 12px 0;
         width: 45px;
@@ -150,7 +150,7 @@
 
 
 @media (min-width: 5120px) {
-    .ebBurgerLine {
+    .cstmBurgerLine {
         height: 5px;
         margin: 14px 0;
         width: 55px;

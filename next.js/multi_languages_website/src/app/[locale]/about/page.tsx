@@ -34,7 +34,7 @@ const AboutPage = () => {
     const t = useTranslations('AboutPage');
     
     return (      
-        <div className={styles.ebAbout}>
+        <div className={styles.cstmAbout}>
             <SubPagesLayout
             headerContent={
                 <h1>
@@ -42,8 +42,7 @@ const AboutPage = () => {
                 </h1>
             }
             >
-            <h2>Contact Information</h2>
-            <p>Email: contact@example.com</p>
+            <h2>#PLACEHOLDER#</h2>
             </SubPagesLayout>
         </div>
     );

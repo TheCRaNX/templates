@@ -27,7 +27,7 @@
 
         "external_hosting_title": "External Hosting",
         "external_hosting_text": "This website is hosted externally. The personal data collected on this website is stored on the servers of the hosting provider(s). This may include IP addresses, contact inquiries, meta and communication data, contract data, contact details, names, website access, and other data generated through a website. External hosting is performed to fulfill contracts with our potential and existing customers (Art. 6(1)(b) GDPR) and in the interest of providing our online offering securely, quickly, and efficiently by a professional provider (Art. 6(1)(f) GDPR). If consent is requested, processing is carried out exclusively on the basis of Art. 6(1)(a) GDPR and §25(1) TTDSG, to the extent that the consent includes the storage of cookies or access to information on the user’s device (e.g., device fingerprinting) as defined in the TTDSG. The consent can be revoked at any time.<br><br>Our hosting provider(s) will process your data only as far as it is necessary to fulfill their performance obligations and follow our instructions regarding this data.",
-        "external_hosting_company": "We use the following hosting provider:<br><br>netcup GmbH<br>Daimlerstraße 25<br>76185 Karlsruhe<br>Germany",
+        "external_hosting_company": "We use the following hosting provider:<br><br>#PLACEHOLDER#",
 
         "order_processing_title": "Order Processing",
         "order_processing_text": "We have entered into a data processing agreement (DPA) for the use of the above service. This is a contract required by data protection law to ensure that the service processes the personal data of our website visitors only according to our instructions and in compliance with GDPR.",

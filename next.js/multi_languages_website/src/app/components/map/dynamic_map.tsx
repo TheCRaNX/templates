@@ -38,8 +38,19 @@ import styles from './map.module.scss';
 
 
 
+// ===============
+// 5. Define Props
+// ===============
+interface DynamicMapProps {
+    coordinates: [number, number];
+    title: string;
+    address: string | { __html: string };
+}
+
+
+
 // ============
-// 5. Component
+// 6. Component
 // ============
 L.Icon.Default.mergeOptions({
     iconRetinaUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon-2x.png',
@@ -47,31 +58,30 @@ L.Icon.Default.mergeOptions({
     shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
 });
 
-const position: [number, number] = [48.98719360764861, 8.539675308124767];
-
-const DynamicMap = () => {
-    const c = useTranslations('ContactDetails');
-
-
+const DynamicMap: React.FC<DynamicMapProps> = ({ coordinates, title, address }) => {
     return (
-    <MapContainer center={position} zoom={13} style={{ height: '500px', width: '100%' }} className={styles.ebDynamicMap}>
-        <TileLayer
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        />
-        <Marker position={position}>
-        <Popup>
-            <b>Ehinger Bau</b>
-            <p dangerouslySetInnerHTML={{__html: c.raw('address')}}></p>
-        </Popup>
-        </Marker>
-    </MapContainer>
+        <MapContainer center={coordinates} zoom={13} style={{ height: '500px', width: '100%' }} className={styles.cstmDynamicMap}>
+            <TileLayer
+                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
+            <Marker position={coordinates}>
+                <Popup>
+                    <b>{title}</b>
+                    {typeof address === 'string' ? (
+                        <p>{address}</p>
+                    ) : (
+                        <p dangerouslySetInnerHTML={address}></p>
+                    )}
+                </Popup>
+            </Marker>
+        </MapContainer>
     );
 };
 
 
 
 // ===================
-// 6. Export Component
+// 7. Export Component
 // ===================
 export default DynamicMap;

@@ -38,11 +38,11 @@ export const CanvasWrapper: React.FC<{ children: React.ReactNode }> = ({ childre
   const { ebIsOverflowToggled } = useToggleOverflow();
 
   return (
-    <div className={`${styles.ebCanvas} ebNoHorizontalOverflow`}>
+    <div className={`${styles.cstmCanvas} cstmNoHorizontalOverflow`}>
 
       <Navbar ebIsToggled={ebIsToggled} ebBasicToggle={toggle} /> 
       
-      <div className={`${styles.ebContent} ${ebIsToggled ? styles.ebNavbarActive : ""} ${ebIsOverflowToggled ? "ebNoOverflow" : ""}`}>
+      <div className={`${styles.cstmContent} ${ebIsToggled ? styles.cstmNavbarActive : ""} ${ebIsOverflowToggled ? "cstmNoOverflow" : ""}`}>
         <Header />
         
         {children}
