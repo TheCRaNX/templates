@@ -1,6 +1,5 @@
 {
-  "ContactPage": {
-    "title": "Contact",
-    "email_redirect": "write e-mail"
-}
+    "ContactPage": {
+      "title": "Contact"
+  }
 }
