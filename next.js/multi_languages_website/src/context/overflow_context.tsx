@@ -9,7 +9,7 @@
 // ===================
 // 1. Import Libraries
 // ===================
-import React, { createContext, useContext, useState, ReactNode } from 'react';
+import React, { createContext, ReactNode, useContext, useEffect, useState } from 'react';
 
 
 
@@ -18,7 +18,7 @@ import React, { createContext, useContext, useState, ReactNode } from 'react';
 // ===============
 interface OverflowContextType {
   ebIsOverflowToggled: boolean;
-  setebIsOverflowToggled: React.Dispatch<React.SetStateAction<boolean>>;
+  setEbIsOverflowToggled: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 
@@ -30,14 +30,27 @@ const OverflowContext = createContext<OverflowContextType | undefined>(undefined
 
 
 
-// ===================
-// 4. Export Component
-// ===================
+// ====================
+// 4. Export Components
+// ====================
 export const OverflowProvider = ({ children }: { children: ReactNode }) => {
-  const [ebIsOverflowToggled, setebIsOverflowToggled] = useState(false);
+  const [ebIsOverflowToggled, setEbIsOverflowToggled] = useState(false);
+
+  // Add or remove the 'ebNoOverflow' class from the body when toggled
+  useEffect(() => {
+    if (ebIsOverflowToggled) {
+      document.body.classList.add("ebNoOverflow");
+    } else {
+      document.body.classList.remove("ebNoOverflow");
+    }
+    // Cleanup on unmount
+    return () => {
+      document.body.classList.remove("ebNoOverflow");
+    };
+  }, [ebIsOverflowToggled]);
 
   return (
-    <OverflowContext.Provider value={{ ebIsOverflowToggled, setebIsOverflowToggled }}>
+    <OverflowContext.Provider value={{ ebIsOverflowToggled, setEbIsOverflowToggled }}>
       {children}
     </OverflowContext.Provider>
   );

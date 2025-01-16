@@ -1,0 +1,47 @@
+// =================================================== //
+// SRC/APP/COMPONENTS/MODAL/MODAL.MODULE.SCSS
+// =================================================== //
+
+
+
+.ebModal {
+    background-color: rgba(0, 0, 0, .95);
+    display: none;
+    height: 100vh;
+    padding: 5%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    overflow: hidden;
+    visibility: hidden;
+    width: 100vw;
+    z-index: 2000;
+}
+
+.ebModalContent {
+    height: fit-content;
+    position: relative;
+    width: fit-content;
+
+    .ebClose {
+        height: 30px;
+
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        
+        width: 30px;
+        z-index: 2001;
+    }
+}
+
+.ebModalActive {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+
+    visibility: visible;
+}

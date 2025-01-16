@@ -41,7 +41,7 @@ export default function HomePage() {
         />
 
         <h1>
-            Next.js Multi-Languages Website Template
+            Next.js Multi-Language Website Template
         </h1>
       </div>
     </main>

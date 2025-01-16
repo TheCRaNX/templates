@@ -4,7 +4,10 @@
     "full_address": "Mustername<br>Musterstraße 1<br>12345 Musterstadt<br>Germany",
     "address_street": "Musterstraße 1",
     "address_zip": "12345",
-    "address_city": "Musterstadt",
-    "address_country": "Germany"
+    "address_city": "Musterstad",
+    "address_country": "Germany",
+    "email": "next.js@template.de",
+    "name": "Next.js - Multi-Language Website Template",
+    "telephone": "+49 123 4567890"
   }
 }
